@@ -1,5 +1,5 @@
 # KubeStalk
-KubeStalk is a tool to discover Kubernetes and related infrastructure based attack surface from a black-box perspective. This tool is a community version of the tool used to probe for unsecured Kubernetes clusters around the internet during [Project Resonance - Wave 9]().
+KubeStalk is a tool to discover Kubernetes and related infrastructure based attack surface from a black-box perspective. This tool is a community version of the tool used to probe for unsecured Kubernetes clusters around the internet during [Project Resonance - Wave 9](https://redhuntlabs.com/blog/thousands-of-unsecured-kubernetes-clusters-exposed.html).
 
 ## Usage
 
