@@ -78,7 +78,9 @@ HTTP requests can be fine-tuned using the `-t` (to mention HTTP timeouts), `-ua`
 You can control the number of hosts to scan simultanously using the `--concurrency` flag. The default value is set to 5.
 
 #### Output
-The output is written to a CSV filea and can be controlled by the `--output` flag. A sample of the output is as belows:
+The output is written to a CSV filea and can be controlled by the `--output` flag.
+
+A sample of the CSV output rendered in markdown is as belows:
 
 |host                       |path |issue                       |type          |severity                      |
 |---------------------------|-----|----------------------------|--------------|------------------------------|
