@@ -1,0 +1,11 @@
+{
+    "name": "Kubernetes Operational View Dashboard Exposure",
+    "protocol": "http",
+    "path": "/",
+    "detector": [
+        "Kubernetes Operational View[\\s\\d\\.]+?</title>"
+    ],
+    "platform": "on-premise/cloud",
+    "type": "add-on",
+    "severity": "vulnerability/exposure"
+}

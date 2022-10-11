@@ -1,0 +1,12 @@
+{
+    "name": "Kubernetes Web View Dashboard Exposure",
+    "protocol": "http",
+    "path": "/",
+    "detector": [
+        "Kubernetes Web View</title>",
+        "<a href=\"https?:\\/\\/codeberg\\.org\\/hjacobs\\/kube\\-web\\-view"
+    ],
+    "platform": "on-premise/cloud",
+    "type": "add-on",
+    "severity": "vulnerability/exposure"
+}

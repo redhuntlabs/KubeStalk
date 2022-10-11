@@ -1,0 +1,12 @@
+{
+    "name": "etcd Viewer Dashboard Exposure",
+    "protocol": "http",
+    "path": "/",
+    "detector": [
+        "etcd viewer</title>",
+        "<a href=\"https?:\\/\\/github\\.com\\/nikfoundas\\/etcd\\-viewer\\/blob\\/master\\/LICENSE"
+    ],
+    "platform": "on-premise/cloud",
+    "type": "add-on",
+    "severity": "vulnerability/exposure"
+}

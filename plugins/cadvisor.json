@@ -1,0 +1,11 @@
+{
+    "name": "cAdvisor Metrics Web UI Dashboard Exposure",
+    "protocol": "http",
+    "path": "/",
+    "detector": [
+        "<title>cAdvisor"
+    ],
+    "platform": "on-premise/cloud",
+    "type": "add-on",
+    "severity": "vulnerability/exposure"
+}

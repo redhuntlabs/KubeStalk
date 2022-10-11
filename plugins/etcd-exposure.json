@@ -1,0 +1,11 @@
+{
+    "name": "Unauthenticated etcd Exposure",
+    "protocol": "http",
+    "path": "/version",
+    "detector": [
+        "\"etcdserver\":\"([\\d\\.]+?)\",[\\s\\n]*?\"etcdcluster\":"
+    ],
+    "platform": "cloud",
+    "type": "database",
+    "severity": "vulnerability/misconfiguration"
+}

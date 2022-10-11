@@ -1,0 +1,14 @@
+{
+    "name": "Kubernetes Paths Exposure",
+    "protocol": "http",
+    "path": "/",
+    "detector": [
+        "paths:\\s*?\\[",
+        "\"/healthz\"",
+        "\"/logs\"",
+        "\"/livez\""
+    ],
+    "platform": "on-premise/cloud",
+    "type": "core-component",
+    "severity": "vulnerability/misconfiguration"
+}

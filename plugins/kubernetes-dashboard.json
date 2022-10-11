@@ -1,0 +1,11 @@
+{
+    "name": "Kubernetes Dashboard Exposure",
+    "protocol": "http",
+    "path": "/",
+    "detector": [
+        "<title>Kubernetes Dashboard"
+    ],
+    "platform": "on-premise/cloud",
+    "type": "core-component",
+    "severity": "vulnerability/misconfiguration"
+}

@@ -1,0 +1,11 @@
+{
+    "name": "Kubernetes Resource Report Dashboard Exposure",
+    "protocol": "http",
+    "path": "/",
+    "detector": [
+        "<title>Overview - Kubernetes Resource Report"
+    ],
+    "platform": "on-premise/cloud",
+    "type": "add-on",
+    "severity": "vulnerability/exposure"
+}

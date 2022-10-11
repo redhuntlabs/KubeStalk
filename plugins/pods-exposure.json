@@ -1,0 +1,14 @@
+{
+    "name": "Kubernetes Pod List Exposure",
+    "protocol": "http",
+    "path": [
+        "/api/v1/pods",
+        "/pods"
+    ],
+    "detector": [
+        "kind\":\"PodList"
+    ],
+    "platform": "on-premise/cloud",
+    "type": "core-component",
+    "severity": "vulnerability/misconfiguration"
+}

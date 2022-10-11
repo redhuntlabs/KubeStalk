@@ -1,0 +1,11 @@
+{
+    "name": "Kubernetes Version Disclosure",
+    "protocol": "http",
+    "path": "/version",
+    "detector": [
+        "\"gitVersion\":\\s?\"(v[\\d\\.]+?)\""
+    ],
+    "platform": "on-premise/cloud",
+    "type": "core-component",
+    "severity": "vulnerability/misconfiguration"
+}
