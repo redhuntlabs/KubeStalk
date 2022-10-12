@@ -2,6 +2,9 @@
 KubeStalk is a tool to discover Kubernetes and related infrastructure based attack surface from a black-box perspective. This tool is a community version of the tool used to probe for unsecured Kubernetes clusters around the internet during [Project Resonance - Wave 9](https://redhuntlabs.com/blog/thousands-of-unsecured-kubernetes-clusters-exposed.html).
 
 ## Usage
+The GIF below demonstrates usage of the tool:
+
+![tooldemo](https://user-images.githubusercontent.com/39941993/195374856-eb13c002-a619-425c-a819-cb90fff9af70.gif)
 
 ### Installation
 KubeStalk is written in Python and requires the `requests` library.
