@@ -3,7 +3,7 @@
     "protocol": "http",
     "path": "/version",
     "detector": [
-        "\"gitVersion\":\\s?\"(v[\\d\\.]+?)\""
+        "\"gitVersion\":\\s?\"v[\\d\\.\\-a-z]+?\""
     ],
     "platform": "on-premise/cloud",
     "type": "core-component",

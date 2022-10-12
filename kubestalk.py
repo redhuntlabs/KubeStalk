@@ -54,13 +54,15 @@ def match_fps(path: str, resp: str) -> tuple:
     '''
     for x in fingerprints:
         if isinstance(x['path'], list):
-            for path in x['path']:
-                for rex in x['detector']:
-                    if re.search(rex, resp, re.I):
-                        return x['name'], x['type'], x['severity']
+            for xpath in x['path']:
+                if xpath == path:
+                    for rex in x['detector']:
+                        if re.search(rex, resp, re.I):
+                            return x['name'], x['type'], x['severity']
         else:
             if x['path'] == path:
                 for rex in x['detector']:
+                    print(rex)
                     if re.search(rex, resp, re.I):
                         return x['name'], x['type'], x['severity']
 
@@ -94,9 +96,10 @@ def process_hosts(hosts: list, concurrency: int, timeout: int, ssl: bool) -> Non
     '''
     Main wrapper around the engine
     '''
-    with ThreadPoolExecutor(max_workers=concurrency) as exec:
-        for host in hosts:
-            exec.submit(proc_host, str(host), timeout, ssl)
+    #with ThreadPoolExecutor(max_workers=concurrency) as exec:
+    for host in hosts:
+    #        exec.submit(proc_host, str(host), timeout, ssl)
+        proc_host(str(host), timeout, ssl)
 
 def main():
     '''
