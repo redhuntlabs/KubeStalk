@@ -84,10 +84,10 @@ A sample of the CSV output rendered in markdown is as belows:
 
 |host                       |path |issue                       |type          |severity                      |
 |---------------------------|-----|----------------------------|--------------|------------------------------|
-|https://█.█.█.█:10250|/pods|Kubernetes Pod List Exposure|core-component|vulnerability/misconfiguration|
-|https://█.█.█.█:443 |/api/v1/pods|Kubernetes Pod List Exposure|core-component|vulnerability/misconfiguration|
-|http://█.█.██.█:80|/|etcd Viewer Dashboard Exposure|add-on|vulnerability/exposure|
-|http://██.██.█.█:80|/|cAdvisor Metrics Web UI Dashboard Exposure|add-on|vulnerability/exposure|
+|`https://█.█.█.█:10250`|/pods|Kubernetes Pod List Exposure|core-component|vulnerability/misconfiguration|
+|`https://█.█.█.█:443` |/api/v1/pods|Kubernetes Pod List Exposure|core-component|vulnerability/misconfiguration|
+|`http://█.█.██.█:80`|/|etcd Viewer Dashboard Exposure|add-on|vulnerability/exposure|
+|`http://██.██.█.█:80`|/|cAdvisor Metrics Web UI Dashboard Exposure|add-on|vulnerability/exposure|
 
 ## Version & License
 The tool is licensed under the [BSD 3 Clause License](LICENSE) and is currently at v0.1.
