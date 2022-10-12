@@ -8,6 +8,8 @@ from concurrent.futures import ThreadPoolExecutor
 version = 'v0.1'
 writer = None
 fingerprints = list()
+warnings.filterwarnings('ignore')
+
 def_headers = {
     'User-Agent'        : 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36',
     'Accept'            : 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
@@ -26,7 +28,6 @@ lackofart = '''
 [!] Author: 0xInfection (RHL Research Team)
 [!] Continuously Track Your Attack Surface using https://redhuntlabs.com/nvadr.
 '''
-warnings.filterwarnings('ignore')
 
 def loader(fname: str) -> None:
     '''
@@ -62,7 +63,6 @@ def match_fps(path: str, resp: str) -> tuple:
         else:
             if x['path'] == path:
                 for rex in x['detector']:
-                    print(rex)
                     if re.search(rex, resp, re.I):
                         return x['name'], x['type'], x['severity']
 
@@ -96,10 +96,9 @@ def process_hosts(hosts: list, concurrency: int, timeout: int, ssl: bool) -> Non
     '''
     Main wrapper around the engine
     '''
-    #with ThreadPoolExecutor(max_workers=concurrency) as exec:
-    for host in hosts:
-    #        exec.submit(proc_host, str(host), timeout, ssl)
-        proc_host(str(host), timeout, ssl)
+    with ThreadPoolExecutor(max_workers=concurrency) as exec:
+        for host in hosts:
+            exec.submit(proc_host, str(host), timeout, ssl)
 
 def main():
     '''
