@@ -24,7 +24,7 @@ lackofart = '''
     |  K U B E S T A L K  |
     +---------------------+   %s
 
-[!] HTTPLoot by RedHunt Labs - A Modern Attack Surface (ASM) Management Company
+[!] KubeStalk by RedHunt Labs - A Modern Attack Surface (ASM) Management Company
 [!] Author: 0xInfection (RHL Research Team)
 [!] Continuously Track Your Attack Surface using https://redhuntlabs.com/nvadr.
 '''
