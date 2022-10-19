@@ -105,7 +105,7 @@ def main():
     Main function to wrap all of them
     '''
     print(lackofart % version)
-    parser = ArgumentParser(usage='./kubestalk.py <url(s)>/<cidr>')
+    parser = ArgumentParser(usage='./kubestalk.py <url(s)>')
     parser._action_groups.pop()
 
     required = parser.add_argument_group('Required Arguments')
