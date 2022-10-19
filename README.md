@@ -28,7 +28,7 @@ $ python3 kubestalk.py  -h
     |  K U B E S T A L K  |
     +---------------------+   v0.1
 
-[!] HTTPLoot by RedHunt Labs - A Modern Attack Surface (ASM) Management Company
+[!] KubeStalk by RedHunt Labs - A Modern Attack Surface (ASM) Management Company
 [!] Author: 0xInfection (RHL Research Team)
 [!] Continuously Track Your Attack Surface using https://redhuntlabs.com/nvadr.
 
@@ -63,7 +63,7 @@ $ python3 kubestalk.py https://███.██.██.███:10250
     |  K U B E S T A L K  |
     +---------------------+   v0.1
 
-[!] HTTPLoot by RedHunt Labs - A Modern Attack Surface (ASM) Management Company
+[!] KubeStalk by RedHunt Labs - A Modern Attack Surface (ASM) Management Company
 [!] Author: 0xInfection (RHL Research Team)
 [!] Continuously Track Your Attack Surface using https://redhuntlabs.com/nvadr.
 
