@@ -73,6 +73,7 @@ def proc_host(host: str, timeout: int, ssl: bool) -> None:
     print('[*] Processing host:', host)
     global writer
     allpaths = list()
+    issuecounter = 0
 
     for fp in fingerprints:
         if isinstance(fp['path'], list):
@@ -90,7 +91,10 @@ def proc_host(host: str, timeout: int, ssl: bool) -> None:
 
         if xfresp:
             print('[!] Found potential issue on %s: %s' % (host, xfresp[0]))
+            issuecounter += 1
             writer.writerow([host, path, xfresp[0], xfresp[1], xfresp[2]])
+
+    print('[*] %s issues found on %s' % (issuecounter, host))
 
 def process_hosts(hosts: list, concurrency: int, timeout: int, ssl: bool) -> None:
     '''
